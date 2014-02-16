@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="" title=""  description="">
+      <siteMapNode url="majorMenu">
+        <siteMapNode url="~/Default.aspx" 
+                     title="Home" 
+                     description="Home" 
+                     backgroundImg="homepage.jpg" />
+        <siteMapNode url="~/Private.aspx" 
+                     title="Private Instruction"
+                     description="Private Instruction"
+                     backgroundImg="privates.jpg"/>
+        <siteMapNode url="~/Classes.aspx" 
+                     title="Group Classes"  
+                     description="Group Classes"
+                     backgroundImg="classes.jpg" />
+        <siteMapNode url="~/Wedding.aspx" 
+                     title="Weddings/Events"  
+                     description="Weddings/Events" 
+                     backgroundImg="wedding.jpg" />
+        <siteMapNode url="~/Coaching.aspx" 
+                     title="Competitive Coaching"  
+                     description="Competitive Coaching"
+                     backgroundImg="competition.jpg"/>
+        <siteMapNode url="~/Consulting.aspx" 
+                     title="Consulting"  
+                     description="Consulting"
+                     backgroundImg="consulting.jpg"/>
+        <siteMapNode url="~/Stylist.aspx" 
+                     title="Stylist"  
+                     description="Stylist"
+                     backgroundImg="stylist.jpg" />
+      </siteMapNode>
+      <siteMapNode url="minorMenu">
+        <!--
+        <siteMapNode url="~/About.aspx"
+                     title="About Us"
+                     description="About Us"
+                     backgroundImg="" />
+        <siteMapNode url="~/WhyDance.aspx"
+                     title="Why Dance"
+                     description="Why Dance"
+                     backgroundImg="" />
+        -->
+       </siteMapNode>
+     </siteMapNode>
+</siteMap>

@@ -1,0 +1,170 @@
+﻿* 
+{
+	font-family:Arial, Sans-Serif;
+	color:#ffffff;
+   	padding:0px;
+}
+
+body 
+{
+	background-color:#201A17;
+}
+
+#pageContainerDiv 
+{
+	background-color:#2A2925;	
+	padding:30px 15px 0px 15px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:-275px auto auto -490px;
+	height:515px;
+	width:980px;
+}
+
+.contentContainerDiv 
+{
+	border:2px solid white;	
+	float:left;
+	height:490px;
+	width:754px;
+}
+
+	#contentHeadline
+	{
+		color:#2A2925;
+		font-size:26px;
+		font-family:Times, serif;		
+		margin:250px 0px 0px 60px;
+	}
+	
+	#contentTextContainer
+	{
+		background:url(/images/opaque.png) repeat;		
+		position:absolute;
+		bottom:12%;
+		left:50%;
+		margin:auto auto auto -488px;
+		padding:20px;
+		overflow:hidden;
+		width:714px;
+	}
+	
+	#contentTextTable td
+	{
+		padding:0px 10px 0px 0px;
+	}
+	
+		#contentText
+		{
+			font-size:14px;
+			width:454px;
+		}
+		
+		#contentTextTitleContainer
+		{
+			text-transform:uppercase;
+			font-size:18px;
+			vertical-align:bottom;
+			text-align:right;
+			width:240px;
+		}
+
+#menuContainerDiv 
+{
+	float:right;
+	margin-left:5px;
+	width:210px;		
+	overflow:hidden;
+}
+
+.menu 
+{
+	float:right;
+	text-align:right;
+	text-transform:uppercase;
+}
+
+	.navigation
+	{
+		line-height:16px;
+	}
+
+		.navigationMenuItem 
+		{
+			font-size:15px;
+		}
+
+		.navigationMenuItemActive 
+		{
+			font-weight:bold;
+		}
+
+	.minor
+	{
+		line-height:14px;
+	}	
+	
+		.minorMenuItem
+		{
+			font-size:12px;
+		}
+		
+		.minorMenuItemActive
+		{
+			font-weight:bold;
+		}
+
+.separator
+{
+	border-bottom:dotted 1px white;
+	float:right;
+	margin:40px 0px 20px 0px;
+	width:95%;
+}
+
+.clear
+{
+	clear:both;
+}
+
+#contactInfo 
+{
+	margin:200px 0px 0px 0px;
+	float:right;
+}
+
+	.tbContactInfo td 
+	{
+		padding:0px 1px 0px 0px;
+		vertical-align:middle;
+	}
+
+	.icon 
+	{
+		width:20px;
+	}
+
+	.iconLetter
+	{
+		color:#008bce;
+		font-size:18px;
+		border-right:1px dotted #535045;
+	}
+
+	.iconText 
+	{
+		font-style:italic;
+		font-size:11px;
+	}
+	
+		.iconText A:link
+		{
+			text-decoration:none;
+		}
+
+#footer
+{
+	padding:3px 0px 0px 20px;
+	font-size:10px;
+}

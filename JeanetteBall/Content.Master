@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Content.master.cs" Inherits="JeanetteBall.Content" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Jeanette Ball Dance</title>
+    <link rel="stylesheet" href="styles/main.css" type="text/css" />
+    <asp:ContentPlaceHolder ID="cphHtmlHead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div id="pageContainerDiv">
+            <div runat="server" class="contentContainerDiv" id="contentContainerDiv">
+                <asp:ContentPlaceHolder ID="cphPageContentTitle" runat="server">                
+                    <div id="contentHeadline">
+                        change your life.
+                    </div>
+                </asp:ContentPlaceHolder>
+                <asp:ContentPlaceHolder ID="cphPageContentTextContainer" runat="server">
+                    <div id="contentTextContainer">
+                        <table id="contentTextTable">
+                            <tr>
+                            <td id="contentText">
+                                <asp:ContentPlaceHolder ID="cphPageContentText" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </td>
+                            <td id="contentTextTitleContainer">
+                                <asp:Label ID="contentTextTitle" runat="server"></asp:Label>
+                            </td>
+                            </tr>
+                        </table>
+                    </div>
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="menuContainerDiv">
+                <%-- Main Navigation Menu --%>
+                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="false" StartingNodeUrl="majorMenu" />
+                <asp:Menu ID="navigationMenu" runat="server" DataSourceID="SiteMapDataSource1"
+                    Orientation="Vertical" StaticSubmenuIndent="0" CssClass="navigation menu">
+                    <StaticMenuItemStyle CssClass="navigationMenuItem" />                    
+                    <StaticSelectedStyle CssClass="navigationMenuItemActive" />
+                </asp:Menu>
+                
+                <div class="clear separator"></div>
+                
+                <%-- Second Navigation Menu --%>
+                <asp:SiteMapDataSource ID="SiteMapDataSource2" runat="server" ShowStartingNode="false" StartingNodeUrl="minorMenu" />
+                <asp:Menu ID="minorMenu" runat="server" DataSourceID="SiteMapDataSource2"
+                    Orientation="Vertical" CssClass="minor menu">
+                    <StaticMenuItemStyle CssClass="minorMenuItem" />
+                    <StaticSelectedStyle CssClass="minorMenuItemActive" />
+                </asp:Menu>
+                
+                <div id="contactInfo">
+                    <table class="tbContactInfo">
+                        <tr>
+                            <td><img src="images/mail.png" class="icon" /></td>
+                            <td class="iconLetter">E</td>
+                            <td class="iconText"><a href="mailto:JeanetteBallDance@comcast.net">JeanetteBallDance@comcast.net</a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/phone.png" class="icon" /></td>
+                            <td class="iconLetter">T</td>
+                            <td class="iconText">425.820.1863</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+                  
+            <div class="clear"></div>
+            <div id="footer">© 2009. All Rights Reserved.</div>
+        </div>
+    </form>
+</body>
+</html>
